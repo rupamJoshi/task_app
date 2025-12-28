@@ -17,7 +17,7 @@ func NewServer() *http.Server {
 		port = "8080"
 		log.Printf("defaulting to port %s", port)
 	}
-	return &http.Server{Addr: "localhost:" + port, Handler: newHandler()}
+	return &http.Server{Addr: "0.0.0.0:" + port, Handler: newHandler()}
 }
 
 func addRoutes(r *httprouter.Router) {

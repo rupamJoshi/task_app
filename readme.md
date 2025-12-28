@@ -58,4 +58,13 @@ curl -X GET http://localhost:8080/tasks
 -------
 
 
+## Docker Build 
+
+   <pre>docker build -t  task_app . </pre>
+
+## Docker Run
+
+   <pre>docker run -p 8080:8080 task_app:latest  </pre> 
+
+
 

@@ -19,7 +19,6 @@ func main() {
 // Run starts the HTTP server
 func Run() {
 	server := router.NewServer()
-	log.Print("sdgghhj")
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt)
 	signal.Notify(c, syscall.SIGTERM)
