@@ -25,11 +25,11 @@ func addRoutes(r *httprouter.Router) {
 	taskRepo := task_repo.NewTaskRepo()
 	taskService := task_service.NewService(taskRepo)
 	handler := task.NewHandler(taskService)
-	r.POST("/task", handler.Create)
-	r.GET("/task/:id", handler.Get)
+	r.POST("/tasks", handler.Create)
+	r.GET("/tasks/:id", handler.Get)
 	r.GET("/tasks", handler.GetAll)
-	r.PUT("/task/:id", handler.Update)
-	r.DELETE("/task/:id", handler.Delete)
+	r.PUT("/tasks/:id", handler.Update)
+	r.DELETE("/tasks/:id", handler.Delete)
 }
 
 func newHandler() http.Handler {
