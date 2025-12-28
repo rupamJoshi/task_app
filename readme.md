@@ -15,7 +15,7 @@ A clean, layered **Task Management REST API** written in **Go**, following **ind
 
 ## APIs
 
-### Create
+### Create Task
 
 ```
 curl -X POST http://localhost:8080/tasks \
@@ -24,14 +24,14 @@ curl -X POST http://localhost:8080/tasks \
 
 ```  
 
-### Get
+### Get Task
 
 ```
 curl -X POST http://localhost:8080/tasks/{id} \
 
 ```
 
-### Update
+### Update Task
 
 ```
 
@@ -41,14 +41,14 @@ curl -X PUT http://localhost:8080/tasks/{id} \
 
 ```
 
-### Delete
+### Delete Task
 
 ```
 curl -X DELETE http://localhost:8080/tasks/{id}1
 
 ```
 
-### List
+### List Tasks
 
 ```
 curl -X GET http://localhost:8080/tasks
